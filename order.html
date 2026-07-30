@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Order page</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+      <img src="logo.png"></img>
+      </div>
+
+      
+    <div class="hamburger">
+       <i class="fa-solid fa-bars"></i>
+    </div>
+    
+      <ul class="nav-links active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order">
+      <h2>Place Your Order</h2>
+      <p>Please fill in the details below to compelete your order</p>
+
+      
+      <form class="details"  action="order.html" method="post">
+     <label for="name">Name</label>
+     <input type="text" name="name" id="name" placeholder="Enter name" required>
+
+      <label for="phone">Phone No</label>
+     <input type="tel" name="phone" id="phone" placeholder="phone no" required>
+
+      <label for="address">Delivery Address</label>
+     <input type="textarea" name="address" id="address" placeholder="Enter Address " required>
+
+     <label for="quantity">Quantity</label>
+     <input type="number" name="quantity" id="quantity" required>
+
+     <label>Payment Method</label>
+
+    <div class="payment-method">
+
+      <label>
+        <input type="radio" name="payment" value="cod" required>
+        Cash on Delivery
+      </label>
+
+      <label>
+        <input type="radio" id="upi"  name="payment" value="upi">
+        UPI
+      </label>
+
+      <label>
+        <input type="radio" name="payment" value="card">
+        Credit/Debit Card
+      </label>
+
+   </div>
+
+   <div id="upi-payment">
+
+    <label for="upi-id">UPI ID</label>
+    <input
+      type="text"
+      id="upi-id"
+      placeholder="example@upi">
+
+    <button type="button" id="payBtn">
+      Pay Now
+    </button>
+
+  </div>
+
+
+   <button type="submit">Place Order</button>
+
+      </form>
+    </section>
+  </main>
+
+   <section class="footer">
+    <div class="footer-container">
+     <div class = "address">
+	  <h3>Nova Eats</h3>
+	  <p>Khayam Chowk, Srinagar Jammu & Kashmir, India - 190008</p>
+	  <p>📞 +91 98765 43210</p>
+      <p>✉️ info@novaeats.com</p>
+	 </div>
+
+  <div class = "links">
+	  <h3>Quick Links</h3>
+      <a href = "index.html">Home</a>
+	  <a href = "menu.html">Menu</a>
+	  <a href = "about.html">About</a>
+	  <a href = "contact.html">Contact</a>
+	 </div>
+
+   <div class = "footer-col">
+	  <h3>Follow US </h3>
+    <div class = "social">
+	  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+	  </div>
+	 </div>
+    </div>
+          <p class="copyright"> © 2026 Nova Eats. All Rights Reserved.</p>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    const form = document.querySelector(".details");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Redirect to Thank You page
+        window.location.href = "thankyou.html";
+    });
+
+    // js for payment section
+    const upi = document.getElementById("upi");
+const upiPayment = document.getElementById("upi-payment");
+
+upi.addEventListener("change", function () {
+    upiPayment.style.display = "block";
+});
+
+// payment success
+
+const payBtn = document.getElementById("payBtn");
+
+payBtn.addEventListener("click", function () {
+
+    const upiId = document.getElementById("upi-id").value;
+
+    if (upiId.trim() === "") {
+        alert("Please enter your UPI ID.");
+        return;
+    }
+
+    alert("✅ Payment Successful!");
+
+    window.location.href = "thankyou.html";
+});
+
+
+
+</script>
+
+</body>
+</html>

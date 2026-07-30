@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+      <img src="logo.png"></img>
+      </div>
+
+      
+    <div class="hamburger">
+       <i class="fa-solid fa-bars"></i>
+    </div>
+    
+      <ul class="nav-links active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1>About Nova Eats</h1>
+      <p>Delivering delicious food with speed, quality, and exceptional service.</p>
+    </section>
+
+    <section class="story">
+      <h2>Our Story</h2>
+      <p>Nova Eats was founded with a simple mission: to make delicious, high-quality food easily accessible to everyone. What started as a small food delivery service has grown into a trusted platform serving thousands of satisfied customers. We believe that great food brings people together, and our goal is to deliver fresh, flavorful meals directly to your doorstep with speed and reliability.
+
+       At Nova Eats, we carefully select quality ingredients and partner with experienced chefs to ensure every meal meets the highest standards. Our team is passionate about providing exceptional customer service and creating a seamless ordering experience. Whether you're craving a quick snack, a family meal, or your favorite comfort food, we are committed to delivering it fresh and on time.
+
+      As we continue to grow, our focus remains on innovation, customer satisfaction, and excellence. We strive to make food delivery more convenient, enjoyable, and affordable while building lasting relationships with our customers. Nova Eats is more than just a food delivery service—it's a commitment to quality, convenience, and great taste.
+</p>
+    </section>
+
+    <section class="team">
+      <h2>Meet Our team</h2>
+      <div class="team-container">
+
+      <div class="team-cards">
+        <img src="images/ceo.jpg" alt="image of ceo">
+        <h3>Mr. John</h3>
+        <p>Founder & CEO</p>
+      </div>
+
+            <div class="team-cards">
+        <img src="images/headchef.avif" alt="image of chef">
+        <h3>Ahmed Khan</h3>
+        <p>Head Chef</p>
+      </div>
+
+            <div class="team-cards">
+        <img src="images/manager1.jpg" alt="image of manager">
+        <h3>Sara Ali</h3>
+        <p>Operations Manager</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+        <h2>5000+</h2>
+        <p>Orders Delivered</p>
+      </div>
+
+        <div class="stat">
+        <h2>1000+</h2>
+        <p>Happy Customers</p>
+      </div>
+
+        <div class="stat">
+        <h2>50+</h2>
+        <p>Food Items</p>
+      </div>
+    </section>
+  </main>
+
+
+  <section class="footer">
+    <div class="footer-container">
+     <div class = "address">
+	  <h3>Nova Eats</h3>
+	  <p>Khayam Chowk, Srinagar Jammu & Kashmir, India - 190008</p>
+	  <p>📞 +91 98765 43210</p>
+      <p>✉️ info@novaeats.com</p>
+	 </div>
+
+  <div class = "links">
+	  <h3>Quick Links</h3>
+      <a href = "index.html">Home</a>
+	  <a href = "menu.html">Menu</a>
+	  <a href = "about.html">About</a>
+	  <a href = "contact.html">Contact</a>
+	 </div>
+
+   <div class = "footer-col">
+	  <h3>Follow US </h3>
+    <div class = "social">
+	  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+	  </div>
+	 </div>
+    </div>
+          <p class="copyright"> © 2026 Nova Eats. All Rights Reserved.</p>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+      <img src="logo.png"></img>
+      </div>
+
+      
+    <div class="hamburger">
+       <i class="fa-solid fa-bars"></i>
+    </div>
+    
+      <ul class="nav-links active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section>
+    <div class="contact">
+    <h1>Contact Us</h1>
+    <p>Have question's or want to place an order? We'd love to hear from you!</p>
+    </div>
+
+    <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Informatiom</h2>
+      <p>Khayam Chowk, Srinagar Jammu & Kashmir, India - 190008</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ info@novaeats.com</p>
+    </div>
+
+    <form class="form" action="submit">
+      <h2>Send us a message</h2>
+      <input type="text" placeholder="your name" required><br><br>
+      <input type="email" placeholder="enter email" required><br><br>
+      <input type="tell" placeholder="enter phone no" required><br><br>
+      <textarea name="message" id="message" placeholder="enter message "></textarea><br><br>
+      <button>Send Message</button>
+    </form>
+    </div>
+  </section>
+  </main>
+
+  <section class="footer">
+    <div class="footer-container">
+     <div class = "address">
+	  <h3>Nova Eats</h3>
+	  <p>Khayam Chowk, Srinagar Jammu & Kashmir, India - 190008</p>
+	  <p>📞 +91 98765 43210</p>
+      <p>✉️ info@novaeats.com</p>
+	 </div>
+
+  <div class = "links">
+	  <h3>Quick Links</h3>
+      <a href = "index.html">Home</a>
+	  <a href = "menu.html">Menu</a>
+	  <a href = "about.html">About</a>
+	  <a href = "contact.html">Contact</a>
+	 </div>
+
+   <div class = "footer-col">
+	  <h3>Follow US </h3>
+    <div class = "social">
+	  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+	  </div>
+	 </div>
+    </div>
+          <p class="copyright"> © 2026 Nova Eats. All Rights Reserved.</p>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+</script>
+</body>
+</html>

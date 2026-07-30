@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Eats Responsive Web Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+      <img src="logo.png"></img>
+      </div>
+
+      
+    <div class="hamburger">
+       <i class="fa-solid fa-bars"></i>
+    </div>
+    
+      <ul class="nav-links active">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span class="highlight">Delicious</span> Food Delivered <span class="highlight">Fast</span></h1>
+      <p>Fresh meals delivered right to your doorstep.</p>
+      <a href="menu.html">
+      <button>Order Now</button>
+      </a>
+    </div>
+
+    <div class="hero-img">
+      <img src="pizza.jpg" alt="Hero image">
+    </div>
+  </section>
+
+  <h2 class="feature-title">Why Choose Nova Eats?</h2>
+  <section class="features">
+    <div class="cards">
+      <h2>🚚 Fast Delivery</h2>
+      <p>Get your food delivered in under 30 minutes.</p>
+    </div>
+
+    <div class="cards">
+      <h2>🍔 Fresh Food</h2>
+      <p>Prepared with fresh and quality ingredients.</p>
+    </div>
+
+    <div class="cards">
+      <h2>📱 Easy Ordering</h2>
+      <p>Order your favorite meals with just a few clicks.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Order Delicious Food?</h2>
+    <p>Join thousands of happy customers and enjoy fast delivery today.</p>
+    <a href="order.html">
+    <button>Order Now</button>
+    </a>
+  </section>
+
+  <section class="footer">
+    <div class="footer-container">
+     <div class = "address">
+	  <h3>Nova Eats</h3>
+	  <p>Khayam Chowk, Srinagar Jammu & Kashmir, India - 190008</p>
+	  <p>📞 +91 98765 43210</p>
+      <p>✉️ info@novaeats.com</p>
+	 </div>
+
+  <div class = "links">
+	  <h3>Quick Links</h3>
+      <a href = "index.html">Home</a>
+	  <a href = "menu.html">Menu</a>
+	  <a href = "about.html">About</a>
+	  <a href = "contact.html">Contact</a>
+	 </div>
+
+   <div class = "footer-col">
+	  <h3>Follow US </h3>
+    <div class = "social">
+	  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+	  </div>
+	 </div>
+    </div>
+          <p class="copyright"> © 2026 Nova Eats. All Rights Reserved.</p>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+</script>
+ </body>
+</html>
